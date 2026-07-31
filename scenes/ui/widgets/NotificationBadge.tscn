@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c4f7ldjohpmvn"]
+
+[ext_resource type="Script" uid="uid://cpv0e0o51y8qr" path="res://scripts/ui/NotificationBadge.gd" id="1_b4oom"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsajd"]
+bg_color = Color(0.8509804, 0.25490198, 0.25490198, 1)
+border_color = Color(0.8509804, 0.25490198, 0.25490198, 1)
+
+[node name="NotificationBadge" type="Control" unique_id=1663647679]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b4oom")
+count = 120
+
+[node name="Center" type="CenterContainer" parent="." unique_id=766448101]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Circle" type="Panel" parent="Center" unique_id=332468399]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vsajd")
+
+[node name="Count" type="Label" parent="Center/Circle" unique_id=1417695721]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
