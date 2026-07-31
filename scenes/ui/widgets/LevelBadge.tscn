@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://uvx8ylyvdq1l"]
+
+[ext_resource type="Script" uid="uid://bfsugq1oyea1h" path="res://scripts/ui/LevelBadge.gd" id="1_u6lnb"]
+
+[node name="LevelBadge" type="Control" unique_id=1180696589]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u6lnb")
+level = 30
+
+[node name="Diamond" type="TextureRect" parent="." unique_id=2141597670]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 5
+
+[node name="Content" type="CenterContainer" parent="." unique_id=1001558740]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextLayout" type="VBoxContainer" parent="Content" unique_id=1073865805]
+layout_mode = 2
+theme_override_constants/separation = -4
+alignment = 1
+
+[node name="LvLabel" type="Label" parent="Content/TextLayout" unique_id=401718467]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="Content/TextLayout" unique_id=1548415437]
+layout_mode = 2
+text = "29"
+horizontal_alignment = 1
+
+[node name="Shine" type="TextureRect" parent="." unique_id=1464174294]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

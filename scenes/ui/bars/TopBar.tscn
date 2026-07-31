@@ -25,24 +25,29 @@ size_flags_horizontal = 3
 
 [node name="PlayerLayout" type="HBoxContainer" parent="Root/Content/PlayerInfo" unique_id=897215950]
 layout_mode = 2
+theme_override_constants/separation = 12
 
 [node name="LevelBadge" type="TextureRect" parent="Root/Content/PlayerInfo/PlayerLayout" unique_id=971651008]
+custom_minimum_size = Vector2(72, 72)
 layout_mode = 2
 
 [node name="Texts" type="VBoxContainer" parent="Root/Content/PlayerInfo/PlayerLayout" unique_id=1157443535]
 layout_mode = 2
+theme_override_constants/separation = 2
 
 [node name="PlayerName" type="Label" parent="Root/Content/PlayerInfo/PlayerLayout/Texts" unique_id=737718552]
 layout_mode = 2
 text = "Dominion"
+vertical_alignment = 1
 
 [node name="PlayerID" type="Label" parent="Root/Content/PlayerInfo/PlayerLayout/Texts" unique_id=1944491326]
 layout_mode = 2
 text = "ID: 984726101"
+vertical_alignment = 1
 
 [node name="Experience" type="Label" parent="Root/Content/PlayerInfo/PlayerLayout/Texts" unique_id=1528333327]
 layout_mode = 2
-text = "LV. 1"
+text = "LV. 29"
 
 [node name="Energy" type="MarginContainer" parent="Root/Content" unique_id=1455390070]
 layout_mode = 2
