@@ -65,8 +65,3 @@ offset_bottom = 40.0
 [node name="NotificationLayer" type="CanvasLayer" parent="HUD" unique_id=1052161502]
 
 [node name="Popups" type="CanvasLayer" parent="." unique_id=1249269526]
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=580280913]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0

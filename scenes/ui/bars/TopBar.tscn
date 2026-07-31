@@ -1,25 +1,15 @@
 [gd_scene format=3 uid="uid://b2gat8dtwbfuy"]
 
-[ext_resource type="Texture2D" uid="uid://cbweq7xqf0ckb" path="res://assets/icons/energy.png" id="1_xaxkj"]
-[ext_resource type="Texture2D" uid="uid://dkxbjg12b7y5s" path="res://assets/icons/game-coin.png" id="2_xtiyw"]
-[ext_resource type="Texture2D" uid="uid://ceo44wiewd435" path="res://assets/icons/crystal.png" id="3_8vpnn"]
-
-[node name="TopBar" type="Control" unique_id=1891704582]
-layout_mode = 3
+[node name="TopBar" type="MarginContainer" unique_id=423691823]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -985.0
+offset_bottom = -973.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Root" type="MarginContainer" parent="." unique_id=699866473]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 20
@@ -62,8 +52,8 @@ size_flags_horizontal = 3
 layout_mode = 2
 
 [node name="EnergyIcon" type="TextureRect" parent="Root/Content/Energy/EnergyLayout" unique_id=685847394]
+visible = false
 layout_mode = 2
-texture = ExtResource("1_xaxkj")
 expand_mode = 3
 
 [node name="EnergyValue" type="Label" parent="Root/Content/Energy/EnergyLayout" unique_id=271241858]
@@ -83,7 +73,6 @@ layout_mode = 2
 
 [node name="GoldIcon" type="TextureRect" parent="Root/Content/Gold/GoldLayout" unique_id=315548824]
 layout_mode = 2
-texture = ExtResource("2_xtiyw")
 expand_mode = 2
 
 [node name="GoldValue" type="Label" parent="Root/Content/Gold/GoldLayout" unique_id=827360760]
@@ -103,7 +92,6 @@ layout_mode = 2
 
 [node name="CrystalIcon" type="TextureRect" parent="Root/Content/Crystal/CrystalLayout" unique_id=1678817107]
 layout_mode = 2
-texture = ExtResource("3_8vpnn")
 expand_mode = 3
 
 [node name="CrystalValue" type="Label" parent="Root/Content/Crystal/CrystalLayout" unique_id=796134297]
