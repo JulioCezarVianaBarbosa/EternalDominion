@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://b2gat8dtwbfuy"]
+
+[ext_resource type="Texture2D" uid="uid://cbweq7xqf0ckb" path="res://assets/icons/energy.png" id="1_xaxkj"]
+[ext_resource type="Texture2D" uid="uid://dkxbjg12b7y5s" path="res://assets/icons/game-coin.png" id="2_xtiyw"]
+[ext_resource type="Texture2D" uid="uid://ceo44wiewd435" path="res://assets/icons/crystal.png" id="3_8vpnn"]
+
+[node name="TopBar" type="Control" unique_id=1891704582]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -985.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Root" type="MarginContainer" parent="." unique_id=699866473]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Content" type="HBoxContainer" parent="Root" unique_id=1929512467]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="PlayerInfo" type="MarginContainer" parent="Root/Content" unique_id=1178428852]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayerLayout" type="HBoxContainer" parent="Root/Content/PlayerInfo" unique_id=897215950]
+layout_mode = 2
+
+[node name="LevelBadge" type="TextureRect" parent="Root/Content/PlayerInfo/PlayerLayout" unique_id=971651008]
+layout_mode = 2
+
+[node name="Texts" type="VBoxContainer" parent="Root/Content/PlayerInfo/PlayerLayout" unique_id=1157443535]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Root/Content/PlayerInfo/PlayerLayout/Texts" unique_id=737718552]
+layout_mode = 2
+text = "Dominion"
+
+[node name="PlayerID" type="Label" parent="Root/Content/PlayerInfo/PlayerLayout/Texts" unique_id=1944491326]
+layout_mode = 2
+text = "ID: 984726101"
+
+[node name="Experience" type="Label" parent="Root/Content/PlayerInfo/PlayerLayout/Texts" unique_id=1528333327]
+layout_mode = 2
+text = "LV. 1"
+
+[node name="Energy" type="MarginContainer" parent="Root/Content" unique_id=1455390070]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EnergyLayout" type="HBoxContainer" parent="Root/Content/Energy" unique_id=183531547]
+layout_mode = 2
+
+[node name="EnergyIcon" type="TextureRect" parent="Root/Content/Energy/EnergyLayout" unique_id=685847394]
+layout_mode = 2
+texture = ExtResource("1_xaxkj")
+expand_mode = 3
+
+[node name="EnergyValue" type="Label" parent="Root/Content/Energy/EnergyLayout" unique_id=271241858]
+layout_mode = 2
+text = "120 / 120"
+
+[node name="AddEnergy" type="Button" parent="Root/Content/Energy/EnergyLayout" unique_id=2145852685]
+layout_mode = 2
+text = "+"
+
+[node name="Gold" type="MarginContainer" parent="Root/Content" unique_id=63622511]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoldLayout" type="HBoxContainer" parent="Root/Content/Gold" unique_id=1368347315]
+layout_mode = 2
+
+[node name="GoldIcon" type="TextureRect" parent="Root/Content/Gold/GoldLayout" unique_id=315548824]
+layout_mode = 2
+texture = ExtResource("2_xtiyw")
+expand_mode = 2
+
+[node name="GoldValue" type="Label" parent="Root/Content/Gold/GoldLayout" unique_id=827360760]
+layout_mode = 2
+text = "25346"
+
+[node name="AddGold" type="Button" parent="Root/Content/Gold/GoldLayout" unique_id=1870305203]
+layout_mode = 2
+text = "+"
+
+[node name="Crystal" type="MarginContainer" parent="Root/Content" unique_id=1532098475]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CrystalLayout" type="HBoxContainer" parent="Root/Content/Crystal" unique_id=370732287]
+layout_mode = 2
+
+[node name="CrystalIcon" type="TextureRect" parent="Root/Content/Crystal/CrystalLayout" unique_id=1678817107]
+layout_mode = 2
+texture = ExtResource("3_8vpnn")
+expand_mode = 3
+
+[node name="CrystalValue" type="Label" parent="Root/Content/Crystal/CrystalLayout" unique_id=796134297]
+layout_mode = 2
+text = "2450"
+
+[node name="AddCrystal" type="Button" parent="Root/Content/Crystal/CrystalLayout" unique_id=1230956483]
+layout_mode = 2
+text = "+"
+
+[node name="Actions" type="MarginContainer" parent="Root/Content" unique_id=997142955]
+layout_mode = 2
+
+[node name="ActionsLayout" type="HBoxContainer" parent="Root/Content/Actions" unique_id=1539142456]
+layout_mode = 2
+
+[node name="MailButton" type="Button" parent="Root/Content/Actions/ActionsLayout" unique_id=1042874146]
+layout_mode = 2
+
+[node name="MenuButton" type="Button" parent="Root/Content/Actions/ActionsLayout" unique_id=452181818]
+layout_mode = 2

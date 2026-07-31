@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d22wsp5q7ohsc"]
 
 [ext_resource type="Texture2D" uid="uid://cb80ij1efybaa" path="res://assets/backgrounds/Background.png" id="1_5q1ba"]
+[ext_resource type="PackedScene" uid="uid://b2gat8dtwbfuy" path="res://scenes/ui/bars/TopBar.tscn" id="2_ng36q"]
 
 [node name="Home" type="Control" unique_id=569134255]
 layout_mode = 3
@@ -28,10 +29,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TopBar" type="Control" parent="HUD" unique_id=979824874]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TopBar" parent="HUD" unique_id=1891704582 instance=ExtResource("2_ng36q")]
+layout_mode = 1
 
 [node name="LeftMenu" type="Control" parent="HUD" unique_id=1887234018]
 anchors_preset = 0
@@ -67,7 +66,7 @@ offset_bottom = 40.0
 
 [node name="Popups" type="CanvasLayer" parent="." unique_id=1249269526]
 
-[node name="Transition" type="ColorRect" parent="." unique_id=580280913]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=580280913]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
