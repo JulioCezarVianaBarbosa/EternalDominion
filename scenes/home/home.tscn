@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://d22wsp5q7ohsc"]
+
+[ext_resource type="Texture2D" uid="uid://cb80ij1efybaa" path="res://assets/backgrounds/Background.png" id="1_5q1ba"]
+
+[node name="Home" type="Control" unique_id=569134255]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=492640946]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5q1ba")
+stretch_mode = 6
+
+[node name="HUD" type="Control" parent="." unique_id=1619359199]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="Control" parent="HUD" unique_id=979824874]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LeftMenu" type="Control" parent="HUD" unique_id=1887234018]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CharacterArea" type="Control" parent="HUD" unique_id=1835044241]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RightArea" type="Control" parent="HUD" unique_id=1087207392]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BottomArea" type="Control" parent="HUD" unique_id=733343658]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EventBanner" type="Control" parent="HUD" unique_id=878280993]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dialogue" type="Control" parent="HUD" unique_id=1047327121]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NotificationLayer" type="CanvasLayer" parent="HUD" unique_id=1052161502]
+
+[node name="Popups" type="CanvasLayer" parent="." unique_id=1249269526]
+
+[node name="Transition" type="ColorRect" parent="." unique_id=580280913]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
