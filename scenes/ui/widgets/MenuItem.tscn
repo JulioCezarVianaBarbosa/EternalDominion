@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://ugmmkd84m2pt"]
+
+[ext_resource type="PackedScene" uid="uid://c4f7ldjohpmvn" path="res://scenes/ui/widgets/NotificationBadge.tscn" id="1_58pr4"]
+[ext_resource type="Script" uid="uid://dx057q6d6s6h7" path="res://scripts/ui/MenuItem.gd" id="1_meyb1"]
+
+[node name="MenuItem" type="Control" unique_id=1094535134]
+custom_minimum_size = Vector2(180, 56)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_meyb1")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1383017304]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Highlight" type="TextureRect" parent="." unique_id=1955991103]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="MarginContainer" parent="." unique_id=480047889]
+custom_minimum_size = Vector2(180, 56)
+propagate_maximum_size = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Layout" type="HBoxContainer" parent="Content" unique_id=1120900816]
+custom_minimum_size = Vector2(180, 56)
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Icon" type="TextureRect" parent="Content/Layout" unique_id=1287749044]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="Content/Layout" unique_id=752870569]
+layout_mode = 2
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="Content/Layout" unique_id=1166314331]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Badge" parent="Content/Layout" unique_id=1663647679 instance=ExtResource("1_58pr4")]
+layout_mode = 2
+count = 0
+
+[node name="ClickArea" type="Button" parent="." unique_id=375893470]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=590580424]

@@ -1,14 +1,13 @@
 extends Control
 
-@export var count: int = 1
+@export var count: int = 0
+
+@onready var label: Label = $Center/Circle/Count
 
 func _ready():
+	update_badge()
 
-	var label = get_node("Center/Circle/Count") as Label
-
-	if label == null:
-		push_error("Label Count não encontrada.")
-		return
+func update_badge():
 
 	if count <= 0:
 		visible = false

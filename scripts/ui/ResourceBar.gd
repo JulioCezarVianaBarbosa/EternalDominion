@@ -1,4 +1,4 @@
-extends MarginContainer
+extends Control
 
 @export var icon: Texture2D
 @export var value: String = "0"

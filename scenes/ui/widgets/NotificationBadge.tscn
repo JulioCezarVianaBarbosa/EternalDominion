@@ -34,6 +34,5 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_vsajd")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-text = "8"
 horizontal_alignment = 1
 vertical_alignment = 1
