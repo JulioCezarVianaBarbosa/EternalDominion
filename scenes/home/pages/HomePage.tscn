@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d0v78n2hxqx4j"]
+
+[node name="HomePage" type="MarginContainer" unique_id=191540291]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1030110289]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=1091495393]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "HOME PAGE"

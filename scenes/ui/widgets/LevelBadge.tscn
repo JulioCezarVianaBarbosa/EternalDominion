@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://uvx8ylyvdq1l"]
 
-[ext_resource type="Script" uid="uid://bfsugq1oyea1h" path="res://scripts/ui/LevelBadge.gd" id="1_u6lnb"]
+[ext_resource type="Script" uid="uid://bfsugq1oyea1h" path="res://scripts/ui/widgets/LevelBadge.gd" id="1_u6lnb"]
 
 [node name="LevelBadge" type="Control" unique_id=1180696589]
 custom_minimum_size = Vector2(72, 72)

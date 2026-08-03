@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ugmmkd84m2pt"]
 
 [ext_resource type="PackedScene" uid="uid://c4f7ldjohpmvn" path="res://scenes/ui/widgets/NotificationBadge.tscn" id="1_58pr4"]
-[ext_resource type="Script" uid="uid://dx057q6d6s6h7" path="res://scripts/ui/MenuItem.gd" id="1_meyb1"]
+[ext_resource type="Script" uid="uid://dx057q6d6s6h7" path="res://scripts/ui/menus/MenuItem.gd" id="1_meyb1"]
 
 [node name="MenuItem" type="Control" unique_id=1094535134]
 custom_minimum_size = Vector2(180, 56)

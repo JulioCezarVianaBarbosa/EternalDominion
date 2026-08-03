@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bgha3r6lanll5"]
+
+[node name="RankingPage" type="MarginContainer" unique_id=341733492]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="CenterContainer" parent="." unique_id=1375055410]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=924127327]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "RANKING PAGE"

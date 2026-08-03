@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4wqpb3ufv3dx"]
+
+[node name="MissionsPage" type="MarginContainer" unique_id=1603513526]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1876165280]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=2127913247]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MISSIONS PAGE"

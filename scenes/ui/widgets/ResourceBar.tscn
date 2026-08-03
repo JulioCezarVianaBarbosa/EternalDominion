@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4jh02epnobfb"]
 
-[ext_resource type="Script" uid="uid://dblyt0221uv4i" path="res://scripts/ui/ResourceBar.gd" id="1_47rsv"]
+[ext_resource type="Script" uid="uid://dblyt0221uv4i" path="res://scripts/ui/widgets/ResourceBar.gd" id="1_47rsv"]
 [ext_resource type="Theme" uid="uid://ctsfnlcadrkcj" path="res://themes/main/MainTheme.tres" id="2_etnph"]
 
 [node name="ResourceBar" type="Control" unique_id=1700237493]
